@@ -143,7 +143,7 @@ gumb.addEventListener("click", function () {
       nagrade[zmagovalec] +
       "<br><small>Rezultat pokažite osebju.</small>";
 
-    gumb.textContent = "Kolo je bilo zavrteno";
+    gumb.textContent = "Kolo je bilo zasukano";
 
     sessionStorage.removeItem("aktivniKod");
   }, 5700);
