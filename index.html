@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Pri Almasi</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="pocetna">
+    <section class="sadrzaj">
+
+      <h1>DOBRODOŠLI</h1>
+
+      <h2>Pri Almasi.</h2>
+
+      <p class="opis">
+        Naredite račun nad 30 € in sodelujte v nagradni igri.
+      </p>
+
+      <form id="forma-koda">
+
+        <label for="unos-koda">
+          Vnesite kodo z računa
+        </label>
+
+        <input
+          id="unos-koda"
+          name="koda"
+          type="text"
+          placeholder="ALM-XXXXXXXX"
+          autocomplete="off"
+          autocapitalize="characters"
+          spellcheck="false"
+          maxlength="12"
+          required
+        >
+
+        <p id="poruka"></p>
+
+        <button type="submit">
+          Nadaljuj
+        </button>
+
+      </form>
+
+      <p class="opomba">
+        Vsako kodo je mogoče uporabiti samo enkrat.
+      </p>
+
+    </section>
+  </main>
+
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

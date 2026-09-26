@@ -1,0 +1,206 @@
+/* Uklanja zadane razmake */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pozadina cijele stranice */
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    145deg,
+    #0d3b2e,
+    #061f18
+  );
+}
+
+/* Centriranje sadržaja */
+.pocetna {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Svijetla kartica */
+.sadrzaj {
+  width: 100%;
+  max-width: 430px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff8e8;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Glavni naslov */
+h1 {
+  color: #0d3b2e;
+  font-family: Georgia, serif;
+  font-size: 45px;
+  line-height: 1;
+}
+
+/* Naziv ispod naslova */
+h2 {
+  margin-top: 12px;
+  color: #d6a83e;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+/* Tekst nagradne igre */
+.opis {
+  max-width: 330px;
+  margin: 25px auto;
+  color: #17332a;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Forma za unos koda */
+#forma-koda {
+  width: 100%;
+  text-align: left;
+}
+
+/* Natpis iznad polja */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0d3b2e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Polje za unos koda */
+input {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+
+  color: #17332a;
+  background-color: white;
+
+  border: 2px solid #d9d3c5;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  outline: none;
+}
+
+/* Polje kada korisnik klikne na njega */
+input:focus {
+  border-color: #d6a83e;
+  box-shadow: 0 0 0 4px rgba(214, 168, 62, 0.2);
+}
+
+/* Prostor za poruku */
+#poruka {
+  min-height: 22px;
+  margin: 8px 3px 5px;
+
+  color: #a22d2d;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Dugme Nadaljuj */
+button {
+  width: 100%;
+  height: 56px;
+
+  color: white;
+  background-color: #0d3b2e;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* Promjena boje kada je miš iznad dugmeta */
+button:hover {
+  background-color: #165c46;
+}
+
+/* Efekt pritiska */
+button:active {
+  transform: translateY(1px);
+}
+/* Naslov nad kolesom */
+.oznaka {
+  margin-bottom: 8px;
+  color: #165c46;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Okvir kola i kazalec */
+.kolo-okvir {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  margin: 25px auto 20px;
+}
+
+/* Kazalec nad kolesom */
+.kazalec {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 35px solid #d6a83e;
+
+  z-index: 2;
+}
+
+/* Kolo */
+#kolo {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  background-color: #ffffff;
+  border: 7px solid #0d3b2e;
+  border-radius: 50%;
+
+  box-shadow: 0 15px 30px rgba(13, 59, 46, 0.25);
+}
+
+/* Poruka s nagrado */
+.rezultat {
+  min-height: 52px;
+  margin-top: 15px;
+
+  color: #0d3b2e;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.rezultat small {
+  display: block;
+  margin-top: 5px;
+
+  color: #69756f;
+  font-size: 12px;
+  font-weight: normal;
+}
